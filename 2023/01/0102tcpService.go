@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"net"
 	"os"
@@ -30,7 +31,30 @@ func main() {
 			continue
 		}
 
-		client.Write([]byte(time.Now().Format("2006-01-02 15:04:05")))
+		reader := bufio.NewReader(client)
+		writer := bufio.NewWriter(client)
+
+		for  {
+			writeString, err := writer.WriteString(time.Now().Format("2006-01-02 15:04:05") + "\n")
+			writer.Flush()
+			if err != nil {
+				fmt.Println(" bufio  writeString err " ,err)
+				break
+			}
+			fmt.Println(" bufio  writeString : " ,writeString)
+
+
+			readString, err := reader.ReadString('\n')
+			if err != nil {
+				fmt.Println("bufio reader err : ", err)
+				break
+			}
+			fmt.Println("bufio readString  === " ,readString)
+
+			time.Sleep(time.Second * 1)
+		}
+
+		//client.Write([]byte(time.Now().Format("2006-01-02 15:04:05")))
 		fmt.Println("client write : ")
 	}
 

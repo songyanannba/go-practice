@@ -27,7 +27,7 @@ func main() {
 	}
 	fmt.Println("readString : ", readString)
 
-	writeString, err := writer.WriteString("i am syn \n")
+	writeString, err := writer.WriteString("i am nb \n")
 	writer.Flush()
 	if err != nil {
 		fmt.Println("WriteString err :" ,err)
