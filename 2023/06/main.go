@@ -74,6 +74,24 @@ func wBiJiao() {
 }
 
 func main() {
+
+	for i := 0; i < 100; i++ {
+		fmt.Println("=====", i)
+		for j := 0; j < 100; j++ {
+			if j == 10 {
+				fmt.Println("=====10 == ", 10)
+				break
+			}
+		}
+		fmt.Println("xxxx", i)
+	}
+
+	fmt.Println("end")
+	//for i := 0; i < 100; i++ {
+	//	randInt := Rand.RandInt(5)
+	//	fmt.Println("i = randInt", i, randInt)
+	//}
+
 	//mysql 和 cassandra 读写比较
 	//defer Close()
 	/*dbtest.Read(40005)
@@ -84,29 +102,28 @@ func main() {
 	//
 	//fmt.Println("main")
 
-
 	//================================================================
 	//2 范型 实验
 	/*tag := TestTag()
 	fmt.Println(tag)*/
 
-	var m1 map[int]string
-	var m2 map[string]int
+	/*	var m1 map[int]string
+		var m2 map[string]int
 
-	m1 = make(map[int]string)
-	m2 = make(map[string]int)
+		m1 = make(map[int]string)
+		m2 = make(map[string]int)
 
-	m1[1] = "a"
-	m1[2] = "b"
-	m1[3] = "c"
-	m2["s"] = 1
-	m2["sq"] = 2
-	m2["sc"] = 3
+		m1[1] = "a"
+		m1[2] = "b"
+		m1[3] = "c"
+		m2["s"] = 1
+		m2["sq"] = 2
+		m2["sc"] = 3
 
-	a := test1[int, string](m1)
-	b := test1[string, int](m2)
+		a := test1[int, string](m1)
+		b := test1[string, int](m2)
 
-	fmt.Println("a = ", a)
-	fmt.Println("b = ", b)
-
+		fmt.Println("a = ", a)
+		fmt.Println("b = ", b)
+	*/
 }
