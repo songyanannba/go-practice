@@ -5,12 +5,12 @@ import (
 	"reflect"
 )
 
-
 type User struct {
 	name string `json:name-field`
 	age  int
 }
-func (u *User)Sss() {
+
+func (u *User) Sss() {
 	fmt.Println("user == sssss")
 }
 
@@ -27,9 +27,7 @@ func main() {
 	fmt.Println(3)
 	fmt.Println(4)
 	fmt.Println(name)
-	//user := &User{"John Doe The Fourth", 20}
-
-
+	//user := &User{"John Doe The Fourth", 20Strings方法练习}
 
 	/*field, ok := reflect.TypeOf(user).Elem().FieldByName("name")
 	if !ok {
@@ -37,12 +35,8 @@ func main() {
 	}
 	fmt.Println(getStructTag(field))*/
 
-
-
 	/*vof := reflect.ValueOf(user)
 	var arr []reflect.Value
 	vof.MethodByName("Sss").Call(arr)*/
 
 }
-
-
