@@ -1,1 +1,0 @@
-[gate]2023/06/30 18:48:02.580	[34minfo[0m	/Users/songyanan/GolandProjects/dehani/slot/slot-server/initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
