@@ -1,0 +1,4 @@
+[gate]2023/07/31 17:00:01.719	[34minfo[0m	/Users/songyanan/GolandProjects/go-practice/slot-server/initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[gate]2023/07/31 17:02:18.409	[34minfo[0m	/Users/songyanan/GolandProjects/go-practice/slot-server/initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[gate]2023/07/31 17:02:50.381	[34minfo[0m	/Users/songyanan/GolandProjects/go-practice/slot-server/initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}
+[gate]2023/07/31 17:16:00.819	[34minfo[0m	/Users/songyanan/GolandProjects/go-practice/slot-server/initialize/redis.go:23	redis connect ping response:	{"pong": "PONG"}

@@ -1,0 +1,10 @@
+{
+  "SlotId": 8,
+  "Type": 1,
+  "MinRatio": 0.5,
+  "MaxRatio": 0.6,
+  "InitialWeight": "",
+  "LargeScale": "",
+  "TrimDown": "",
+  "TrimUp": ""
+}

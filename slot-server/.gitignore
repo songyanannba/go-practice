@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.vscode
+.syncignore
+
+
+/doc
+/log
+./config.*yaml
+*.xlsx
+./slot-server*!/slot-server
